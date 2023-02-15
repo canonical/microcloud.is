@@ -5,7 +5,7 @@
 {% block content %}
   <section class="p-strip--suru">
     <div class="row">
-      <div class="col-6">
+      <div class="col-8">
         <h1>Micro cloud - the power of cloud anywhere you need it</h1>
         <p class="p-heading--4">
           Straightforward and lightweight, but featureful. Micro clouds serve compute near consumers, wherever they may
@@ -16,9 +16,9 @@
           <a href="https://ubuntu.com/engage/guide-to-micro-clouds" class="p-link--inverted">Read a whitepaper &nbsp;&rsaquo;</a>
         </p>
       </div>
-      <div class="col-6">
+      <div class="col-4">
         <img src="https://assets.ubuntu.com/v1/5506324e-Edge-computing.svg" alt="edge computing"
-             style="height: 386px; width: 600px; background: white" />
+             style="height: 251px; width: 390px; background: white" />
       </div>
     </div>
   </section>
@@ -26,11 +26,12 @@
 
   <section class="p-strip is-deep is-bordered">
     <div class="row">
-      <div class="col-6 col-medium-3">
+      <div class="col-12">
         <h2>Deploy a fully functional cloud in minutes</h2>
-
-        <pre><code>snap install microcloud lxd microceph
-microcloud init</code></pre>
+        <div class="row-cli__commands">$ <span class="row-cli__commands-list typer" id="main"
+                                               data-words="snap install microcloud lxd microceph,microcloud init"
+                                               data-delay="50" data-deletedelay="5000" data-colors="#111111"
+                                               style="color: rgb(17, 17, 17);">snap install mic</span></div>
       </div>
     </div>
   </section>
@@ -140,11 +141,15 @@ microcloud init</code></pre>
       </div>
       <div class="col-6">
         <ul class="p-list">
-          <li class="p-list__item is-ticked">For multi-tenant environments: remote authentication, RBAC, projects and multi-user setup</li>
+          <li class="p-list__item is-ticked">For multi-tenant environments: remote authentication, RBAC, projects and
+            multi-user setup
+          </li>
           <li class="p-list__item is-ticked">Easily replicated at scale</li>
           <li class="p-list__item is-ticked">Fully open-source, with commercial support available through Canonical</li>
         </ul>
       </div>
     </div>
   </section>
+
+  <script src="/static/js/typer.js" defer></script>
 {% endblock %}

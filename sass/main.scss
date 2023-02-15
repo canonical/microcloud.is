@@ -9,6 +9,9 @@ $ubuntu-orange: #e95420;
 // import cookie policy
 @import "@canonical/cookie-policy/build/css/cookie-policy";
 
+// import additional styles
+@import "row-cli";
+
 .p-navigation {
   .p-navigation__row {
     .p-navigation__banner {
