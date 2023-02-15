@@ -1,0 +1,29 @@
+{
+  "scripts": {
+    "start": "yarn build && yarn serve",
+    "lint-python": "flake8 webapp && black --check --line-length 79 webapp",
+    "lint-scss": "sass-lint _sass/**/*.scss --verbose --no-exit",
+    "test": "yarn run lint-scss && yarn run lint-python",
+    "watch": "watch -p '_sass/**/*.scss' -c 'yarn run build'",
+    "build": "yarn run build-css && yarn run build-js",
+    "build-css": "sass sass/main.scss static/css/main.css --load-path=node_modules --style=compressed && postcss --use autoprefixer --replace static/css/**/*.css",
+    "build-js": "yarn run build-global-nav && yarn run build-cookie-policy",
+    "build-global-nav": "cp node_modules/@canonical/global-nav/dist/global-nav.js static/js/global-nav.js",
+    "build-cookie-policy": "cp node_modules/@canonical/cookie-policy/build/js/cookie-policy.js static/js/cookie-policy.js",
+    "serve": "./entrypoint 0.0.0.0:${PORT}",
+    "clean": "rm -rf node_modules yarn-error.log static/css *.log *.sqlite _site/ build/ .bundle static/js/cookie-policy.js static/js/global-nav.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.13",
+    "sass": "1.57.1",
+    "postcss-cli": "10.1.0",
+    "sass-lint": "1.13.1",
+    "watch-cli": "0.2.3"
+  },
+  "dependencies": {
+    "@canonical/global-nav": "3.2.3",
+    "@canonical/cookie-policy": "3.4.0",
+    "postcss": "8.4.21",
+    "vanilla-framework": "3.11.0"
+  }
+}

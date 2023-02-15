@@ -1,0 +1,150 @@
+{% extends "_layouts/_root.html" %}
+
+{% block title %}Micro cloud | Edge computing solution{% endblock %}
+
+{% block content %}
+  <section class="p-strip--suru">
+    <div class="row">
+      <div class="col-6">
+        <h1>Micro cloud - the power of cloud anywhere you need it</h1>
+        <p class="p-heading--4">
+          Straightforward and lightweight, but featureful. Micro clouds serve compute near consumers, wherever they may
+          be.
+        </p>
+        <p>
+          <a class="p-button--positive" href="/contact-us">Get in touch</a>
+          <a href="https://ubuntu.com/engage/guide-to-micro-clouds" class="p-link--inverted">Read a whitepaper &nbsp;&rsaquo;</a>
+        </p>
+      </div>
+      <div class="col-6">
+        <img src="https://assets.ubuntu.com/v1/5506324e-Edge-computing.svg" alt="edge computing"
+             style="height: 386px; width: 600px; background: white" />
+      </div>
+    </div>
+  </section>
+
+
+  <section class="p-strip is-deep is-bordered">
+    <div class="row">
+      <div class="col-6 col-medium-3">
+        <h2>Deploy a fully functional cloud in minutes</h2>
+
+        <pre><code>snap install microcloud lxd microceph
+microcloud init</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-strip--light is-deep is-bordered">
+    <div class="row p-divider u-equal-height">
+      <div class="col-3 p-divider__block">
+        <h3 class="p-heading--4">Automated deployment</h3>
+        <p>Micro clouds are built with simplicity and automation in mind. With micro clouds, both deployment and on-site
+          operations are automated with low to no on-site maintenance, regardless of whether you’re running it at the
+          back of the office or at a hard-to-reach remote edge site.</p>
+      </div>
+      <div class="col-3 p-divider__block">
+        <h3 class="p-heading--4">Secure with hassle-free updates</h3>
+        <p>While smaller in scale, your micro clouds will still likely process big amounts of data. They may also run
+          sensitive workloads. Security and prompt vulnerability updates are the key priorities to ensure your data is
+          kept safe. Micro cloud components are packaged using snaps, providing an extra layer of isolation while
+          enabling worry-free updates.</p>
+      </div>
+      <div class="col-3 p-divider__block">
+        <h3 class="p-heading--4">Cost and resource efficient</h3>
+        <p>In addition to standard Ubuntu Server or Desktop, Micro clouds can also be run on Ubuntu Core - a lightweight
+          OS optimised for the edge. Combined with Ubuntu Core, users get a truly lightweight cloud, giving you resource
+          efficiency without compromising on performance, while keeping costs at bay.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-strip">
+    <div class="row">
+      <div class="col-6">
+        <h2>What is the size of a micro cloud?</h2>
+        <p>Micro clouds are highly available by default, so a minimum of 3 systems are needed. They can easily extend in
+          site size and scale from a small 3-node to larger 12-node clusters.</p>
+      </div>
+      <div class="col-6 u-hide--small u-hide--medium u-align--center u-vertically-center">
+        <img src="https://assets.ubuntu.com/v1/23cbb344-Design.png" alt="measurement tools"
+             style="width:300px; height:173px" />
+      </div>
+    </div>
+  </section>
+
+  <section class="p-strip--light">
+    <div class="row p-divider">
+      <div class="col-12">
+        <h2>Best-of-breed open-source components</h2>
+      </div>
+    </div>
+    <div class="row p-divider">
+      <div class="col-4 p-divider__block">
+        <div class="p-heading-icon--muted">
+          <div class="p-heading-icon__header">
+            <h4 class="p-heading-icon__title">LXD</h4>
+          </div>
+          <p><a href="https://ubuntu.com/lxd">LXD</a> is a modern infrastructure tool that has everything you need to
+            run your virtualised workloads. In addition to regular VMs, users can run their workloads using <a
+                    href="https://ubuntu.com/blog/what-are-linux-containers">system containers</a> that behave similarly
+            but consume fewer resources while providing bare-metal performance. LXD is image-based. It supports a wide
+            range of Linux distributions, as well as Windows VMs, and has a good mix of cloud-like features. </p>
+          <p>Check the <a href="https://pages.ubuntu.com/rs/066-EOV-335/images/LXD%20DATASHEET.pdf">datasheet</a> for an
+            overview of LXD’s features.</p>
+        </div>
+      </div>
+
+      <div class="col-4 p-divider__block">
+        <div class="p-heading-icon--muted">
+          <div class="p-heading-icon__header">
+            <h4 class="p-heading-icon__title">Ceph</h4>
+          </div>
+          <p><a href="https://ubuntu.com/ceph">Ceph</a> has become a de facto standard for open-source storage
+            solutions. It provides interfaces for several storage types (block, file and object) within a single
+            cluster, eliminating the need for multiple storage solutions. It is scalable and reliable, making it the
+            perfect solution for any cloud. </p>
+          <p>Get familiar with Ceph <a
+                  href="https://ubuntu.com/blog/open-source-storage-for-beginners-with-ceph">here</a>.</p>
+        </div>
+      </div>
+
+      <div class="col-4 p-divider__block">
+        <div class="p-heading-icon--muted">
+          <div class="p-heading-icon__header">
+            <h4 class="p-heading-icon__title">OVN</h4>
+          </div>
+          <p>OVN is a trusted open source software-defined networking solution. It provides virtual network
+            abstractions, such as virtual L2 and L3 overlays, security groups, DHCP and other networking services. It
+            was designed to support highly scalable and production-grade implementations. </p>
+          <p>OVN has numerous relevant networking features that you can read more about <a
+                  href="https://ubuntu.com/blog/data-centre-networking-what-is-ovn">here</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-strip is-bordered">
+    <div class="row p-divider">
+      <div class="col-12">
+        <h2>Key features</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <ul class="p-list">
+          <li class="p-list__item is-ticked">Highly available cluster deploys in minutes</li>
+          <li class="p-list__item is-ticked">Automatic security updates and streamlined upgrades</li>
+          <li class="p-list__item is-ticked">Runs virtual machines, or system containers for higher density</li>
+        </ul>
+      </div>
+      <div class="col-6">
+        <ul class="p-list">
+          <li class="p-list__item is-ticked">For multi-tenant environments: remote authentication, RBAC, projects and multi-user setup</li>
+          <li class="p-list__item is-ticked">Easily replicated at scale</li>
+          <li class="p-list__item is-ticked">Fully open-source, with commercial support available through Canonical</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+{% endblock %}

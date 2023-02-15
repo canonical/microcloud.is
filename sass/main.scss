@@ -1,0 +1,35 @@
+// settings
+$font-allow-cyrillic-greek-latin: true;
+$ubuntu-orange: #e95420;
+
+// Import Vanilla framework
+@import 'vanilla-framework';
+@include vanilla;
+
+// import cookie policy
+@import "@canonical/cookie-policy/build/css/cookie-policy";
+
+.p-navigation {
+  .p-navigation__row {
+    .p-navigation__banner {
+      background-color: $ubuntu-orange;
+      padding: 0 ($sph--small + $sph--large);
+
+      @media only screen and (max-width: $breakpoint-small) {
+        padding-left: 1rem;
+      }
+
+      .p-navigation__logo {
+        font-weight: 400;
+        margin-right: 0;
+      }
+
+      .p-navigation__toggle {
+        &--open,
+        &--close {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
