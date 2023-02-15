@@ -13,15 +13,18 @@ app = FlaskBase(
     template_404="404.html",
 )
 
+
 @app.context_processor
 def global_template_context():
     return {
         "path": flask.request.path,
     }
 
+
 @app.context_processor
 def utility_processor():
     return {"image": image_template}
+
 
 template_finder_view = TemplateFinder.as_view("template_finder")
 
