@@ -38,20 +38,20 @@
 
   <section class="p-strip--light is-deep is-bordered">
     <div class="row p-divider u-equal-height">
-      <div class="col-3 p-divider__block">
+      <div class="col-4 p-divider__block">
         <h3 class="p-heading--4">Automated deployment</h3>
         <p>Micro clouds are built with simplicity and automation in mind. With micro clouds, both deployment and on-site
           operations are automated with low to no on-site maintenance, regardless of whether you’re running it at the
           back of the office or at a hard-to-reach remote edge site.</p>
       </div>
-      <div class="col-3 p-divider__block">
+      <div class="col-4 p-divider__block">
         <h3 class="p-heading--4">Secure with hassle-free updates</h3>
         <p>While smaller in scale, your micro clouds will still likely process big amounts of data. They may also run
           sensitive workloads. Security and prompt vulnerability updates are the key priorities to ensure your data is
           kept safe. Micro cloud components are packaged using snaps, providing an extra layer of isolation while
           enabling worry-free updates.</p>
       </div>
-      <div class="col-3 p-divider__block">
+      <div class="col-4 p-divider__block">
         <h3 class="p-heading--4">Cost and resource efficient</h3>
         <p>In addition to standard Ubuntu Server or Desktop, Micro clouds can also be run on Ubuntu Core - a lightweight
           OS optimised for the edge. Combined with Ubuntu Core, users get a truly lightweight cloud, giving you resource
@@ -147,6 +147,133 @@
           <li class="p-list__item is-ticked">Easily replicated at scale</li>
           <li class="p-list__item is-ticked">Fully open-source, with commercial support available through Canonical</li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-strip">
+    <div class="row">
+      <div class="col-6">
+        <h2>Edge computing at a large scale</h2>
+        <p>Industrial, Telco, Retail, Banking - micro clouds are the perfect edge computing solution for any
+          industry:</p>
+        <ul class="p-list">
+          <li class="p-list__item is-ticked">Scalable and low-latency HA cluster for critical applications</li>
+          <li class="p-list__item is-ticked">Lightweight to run on small servers or low-cost small devices</li>
+          <li class="p-list__item is-ticked">Low-touch, self-healing, few to no human interactions needed</li>
+        </ul>
+        <p>Read more about micro clouds for the edge in this <a href="https://ubuntu.com/engage/guide-to-micro-clouds">whitepaper</a>
+        </p>
+      </div>
+      <div class="col-6 u-hide--small u-hide--medium u-align--center u-vertically-center">
+        {{ image (
+          url="https://assets.ubuntu.com/v1/7f65439f-dev-at-laptop.svg",
+          alt="",
+          width="250",
+          height="250",
+          hi_def=True,
+          loading="lazy"
+          ) | safe }}
+      </div>
+    </div>
+    <hr class="is-fixed-width p-separator">
+    <div class="row">
+      <div class="col-6 u-hide--small u-hide--medium u-align--center u-vertically-center">
+        <img src="https://assets.ubuntu.com/v1/b6a48d38-Edge-business.svg" alt="edge business"
+             style="height:200px;width:422px">
+      </div>
+      <div class="col-6">
+        <h2>Small-scale private cloud</h2>
+        <p>Do you need to keep sensitive workloads in a controlled environment, or are public cloud costs too
+          unpredictable for your business? Micro clouds are an efficient solution for your small-scale private cloud
+          needs.</p>
+        <ul class="p-list--divided">
+          <li class="p-list__item is-ticked">Resource-efficient to keep costs at bay
+          <li class="p-list__item is-ticked">Simple to deploy and operate</li>
+          <li class="p-list__item is-ticked">Easy to scale as your needs grow</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="is-fixed-width p-separator">
+    <div class="row">
+      <div class="col-6">
+        <h2>Efficient dev environment</h2>
+        Micro cloud is lightweight enough that it can run on a developer laptop. You can use it for:
+        <ul class="p-list">
+          <li class="p-list__item is-ticked">Lightweight and constrained disposable testing environments</li>
+          <li class="p-list__item is-ticked">Simulating or testing complex infrastructure processes</li>
+          <li class="p-list__item is-ticked">Simulating how your workloads would run in production</li>
+          <li class="p-list__item is-ticked">Safely experimenting with new technologies</li>
+        </ul>
+        <p>
+          <a href="https://ubuntu.com/blog/open-source-for-beginners-dev-environment-with-lxd">Setting up a dev
+            environment with LXD</a> offers some useful tips.
+        </p>
+      </div>
+      <div class="col-6 u-hide--small u-hide--medium u-align--center u-vertically-center">
+        <img src="https://assets.ubuntu.com/v1/7f65439f-dev-at-laptop.svg" alt="developer at laptop"
+             style="height:300px;width:300px">
+      </div>
+    </div>
+  </section>
+
+  <section class="p-strip--light">
+    <div class="u-fixed-width">
+      <h2>Integrate with the best hardware vendors</h2>
+      <p>Ubuntu works with a number of hardware vendors specialised in edge computing server equipment. <a
+              href="/contact-us" class="js-invoke-modal">Contact us</a> to discuss working with your preferred vendors.
+      </p>
+      <div class="p-logo-section">
+        <p class="p-logo-section__title"></p>
+        <div class="p-logo-section__items">
+          <div class="p-logo-section__item">
+            <img src="https://assets.ubuntu.com/v1/45bab794-arm.png" alt="" width="375" height="240" loading="lazy"
+                 class="p-logo-section__logo">
+          </div>
+          <div class="p-logo-section__item">
+            <img src="https://assets.ubuntu.com/v1/52d4cc16-Nvidia_Logo_Horizontal.svg" alt="nvidia" width="1701"
+                 height="325" loading="lazy" class="p-logo-section__logo">
+          </div>
+          <div class="p-logo-section__item">
+            <img src="https://assets.ubuntu.com/v1/94ea495b-2018-logo-Intel.svg" alt="" width="146" height="145"
+                 loading="lazy" class="p-logo-section__logo">
+          </div>
+          <div class="p-logo-section__item">
+            <img src="https://assets.ubuntu.com/v1/81564112-Hewlett_Packard_Enterprise_logo.svg"
+                 alt="hewlett packard enterprise" width="1464" height="612" loading="lazy" class="p-logo-section__logo">
+          </div>
+          <div class="p-logo-section__item">
+            <img src="https://assets.ubuntu.com/v1/0970d532-2018-logo-dell.svg" alt="" width="145" height="145"
+                 loading="lazy" class="p-logo-section__logo">
+          </div>
+          <div class="p-logo-section__item">
+            <img src="https://assets.ubuntu.com/v1/c7772315-hp.png" alt="" width="290" height="290" loading="lazy"
+                 class="p-logo-section__logo">
+          </div>
+          <div class="p-logo-section__item">
+            <img src="https://assets.ubuntu.com/v1/97596b4c-logo-lenovo.png" alt="lenovo" width="400" height="66"
+                 loading="lazy" class="p-logo-section__logo">
+          </div>
+          <div class="p-logo-section__item">
+            <img src="https://assets.ubuntu.com/v1/80ab9b3c-2018-logo-cisco.svg" alt="" width="146" height="146"
+                 loading="lazy" class="p-logo-section__logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-strip">
+    <div class="row">
+      <div class="col-6">
+        <h2>All the benefits of a cloud, but localised</h2>
+        <p>Micro clouds are low-touch, efficient and reliable. Do you have a use case in mind? Get in touch with our team.</p>
+
+        <a class="p-button--positive" href="/contact-us">Talk to an expert</a>
+      </div>
+      <div class="col-6 u-hide--small u-hide--medium u-align--center u-vertically-center">
+        <img src="https://assets.ubuntu.com/v1/4d3a4582-edge-cluster.svg" alt="edge cluster"
+             style="height:300px;width:300px">
       </div>
     </div>
   </section>
