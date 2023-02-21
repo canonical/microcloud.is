@@ -13,7 +13,7 @@
           Micro clouds serve compute near consumers, wherever they may be.
         </p>
         <p>
-          <a class="p-button--positive" href="/contact-us">Get in touch</a>
+          <a class="p-button--positive js-invoke-modal" href="/contact-us">Get in touch</a>
           <a href="https://ubuntu.com/engage/guide-to-micro-clouds" class="p-link--inverted" target="_blank" rel="noopener noreferrer">Read whitepaper &nbsp;&rsaquo;</a>
         </p>
       </div>
@@ -364,7 +364,7 @@
         <h2>All the benefits of a cloud, but localised</h2>
         <p>Micro clouds are low-touch, efficient and reliable. Do you have a use case in mind? Get in touch with our team.</p>
 
-        <a class="p-button--positive" href="/contact-us">Talk to an expert</a>
+        <a class="p-button--positive js-invoke-modal" href="/contact-us">Talk to an expert</a>
       </div>
       <div class="col-6 u-hide--small u-hide--medium u-align--center u-vertically-center">
          {{ image (
@@ -381,5 +381,11 @@
     </div>
   </section>
 </main>
+<div
+  class="u-hide"
+  id="contact-form-container"
+  data-form-location="/modals/contact-us"
+></div>
 <script src="/static/js/typer.js" defer></script>
+<script src="/static/js/dynamic-forms.js" defer></script>
 {% endblock %}
