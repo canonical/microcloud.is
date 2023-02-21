@@ -39,13 +39,11 @@
     </div>
     <nav class="p-navigation__nav">
       <ul class="p-navigation__items">
+        <li class="p-navigation__item {% if path.startswith('/resources') %}is-selected{% endif %}"><a
+                class="p-navigation__link" href="/resources/">Resources</a></li>
         <li class="p-navigation__item"><a
                 class="p-navigation__link" href="https://canonical-microcloud.readthedocs-hosted.com/en/latest/"
                 target="_blank" rel="noopener noreferrer">Docs</a></li>
-        <li class="p-navigation__item {% if path.startswith('/resources') %}is-selected{% endif %}"><a
-                class="p-navigation__link" href="/resources/">Resources</a></li>
-        <li class="p-navigation__item {% if path.startswith('/contact') %}is-selected{% endif %}"><a
-                class="p-navigation__link" href="/contact-us/">Contact us</a></li>
       </ul>
       <ul class="p-navigation__items global-nav"></ul>
     </nav>
