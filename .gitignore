@@ -69,3 +69,5 @@ static/js/dist
 
 static/js/cookie-policy.js
 static/js/global-nav.js
+static/js/forms.js
+static/js/utils.js
