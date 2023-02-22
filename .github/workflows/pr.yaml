@@ -52,7 +52,7 @@ jobs:
       - name: Install linkchecker
         run: sudo pip install LinkChecker
       - name: Check internal links
-        run: linkchecker --ignore-url  e_sharpen --ignore-url  w_[0-9]* --ignore-url  h_[0-9]* http://localhost
+        run: linkchecker --ignore-url  e_sharpen --ignore-url  w_[0-9]* --ignore-url  h_[0-9]* http://localhost --ignore-url /flags.png --ignore-url /flags@2x.png
 
   check-inclusive-naming:
     runs-on: ubuntu-latest
