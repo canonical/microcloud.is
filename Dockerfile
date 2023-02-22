@@ -14,15 +14,16 @@ RUN --mount=type=cache,target=/root/.cache/pip pip3 install --user --requirement
 # ===
 FROM node:18 AS yarn-dependencies
 WORKDIR /srv
-ADD package.json .
-RUN --mount=type=cache,target=/usr/local/share/.cache/yarn yarn install
+ADD package.json yarn.lock ./
+RUN --mount=type=cache,target=/usr/local/share/.cache/yarn yarn install --production
 
 
 # Build stage: Build JavaScript
 # ===
 FROM yarn-dependencies AS build-js
 WORKDIR /srv
-ADD . .
+ADD static/js static/js
+ADD build.js build.js
 RUN yarn run build-js
 
 
@@ -52,9 +53,9 @@ COPY --from=python-dependencies /root/.local/bin /root/.local/bin
 
 # Import code, build static
 COPY . .
-RUN rm -rf package.json yarn.lock .babelrc webpack.config.js
+RUN rm -rf package.json yarn.lock .babelrc webpack.config.js build.js
 COPY --from=build-css srv/static/css static/css
-COPY --from=build-js srv/static/js/* static/js/
+COPY --from=build-js /srv/static/js/* static/js/
 
 # Set build ID
 ARG BUILD_ID

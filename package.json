@@ -7,7 +7,8 @@
     "watch": "watch -p '_sass/**/*.scss' -c 'yarn run build'",
     "build": "yarn run build-css && yarn run build-js",
     "build-css": "sass sass/main.scss static/css/main.css --load-path=node_modules --style=compressed && postcss --use autoprefixer --replace static/css/**/*.css",
-    "build-js": "yarn run build-global-nav && yarn run build-cookie-policy",
+    "build-intl-tel-input-utils": "cp node_modules/intl-tel-input/build/js/utils.js static/js",
+    "build-js": "node build.js && yarn run build-global-nav && yarn run build-cookie-policy && yarn run build-intl-tel-input-utils",
     "build-global-nav": "cp node_modules/@canonical/global-nav/dist/global-nav.js static/js/global-nav.js",
     "build-cookie-policy": "cp node_modules/@canonical/cookie-policy/build/js/cookie-policy.js static/js/cookie-policy.js",
     "serve": "./entrypoint 0.0.0.0:${PORT}",
@@ -23,6 +24,8 @@
   "dependencies": {
     "@canonical/global-nav": "3.2.3",
     "@canonical/cookie-policy": "3.4.0",
+    "esbuild": "0.14.10",
+    "intl-tel-input": "17.0.19",
     "postcss": "8.4.21",
     "vanilla-framework": "3.11.1"
   }
