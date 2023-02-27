@@ -22,7 +22,7 @@
     "watch-cli": "0.2.3"
   },
   "dependencies": {
-    "@canonical/global-nav": "3.2.3",
+    "@canonical/global-nav": "3.2.4",
     "@canonical/cookie-policy": "3.4.0",
     "esbuild": "0.14.10",
     "intl-tel-input": "17.0.19",
