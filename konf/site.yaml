@@ -1,6 +1,6 @@
 domain: microcloud.is
 
-image: prod-comms.docker-registry.canonical.com/microcloud.is
+image: prod-comms.ps5.docker-registry.canonical.com/microcloud.is
 
 readinessPath: "/"
 
