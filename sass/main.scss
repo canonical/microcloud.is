@@ -1,7 +1,9 @@
 // settings
 $font-allow-cyrillic-greek-latin: true;
 $ubuntu-orange: #e95420;
+$color-suru-start: lighten(#333, 10%);
 $color-suru-middle: #333;
+$color-suru-end: darken(#333, 10%);
 
 // Import Vanilla framework
 @import 'vanilla-framework';
