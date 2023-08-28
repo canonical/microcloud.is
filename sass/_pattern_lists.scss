@@ -1,0 +1,30 @@
+@mixin ubuntu-p-list-ticked {
+  .p-list--ticked {
+    @extend %vf-clearfix;
+    @extend %vf-list;
+
+    .p-list__item {
+      @extend %vf-list-item;
+
+      border-bottom: 1px solid $colors--light-theme--border-default;
+      padding-left: 2rem;
+      position: relative;
+
+      &::before {
+        @extend %icon;
+        @include vf-icon-success-grey($color-mid-dark);
+
+        content: "";
+        left: 0;
+        position: absolute;
+        top: 0.9rem;
+      }
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+@include ubuntu-p-list-ticked;

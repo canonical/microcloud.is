@@ -16,7 +16,7 @@
 
   <title>{% block title %}{{ title }}{% endblock title %}</title>
   <meta name="description"
-        content="MicroClouds offer a lightweight and automated solution for edge clouds and small scale private clouds. Best of open source cloud infrastructure components integrated seamlessly.">
+        content="{% block description %}{{ description }}{% endblock description %}">
   <meta name="keywords"
         content="micro, cloud, microcloud, automation, edge clouds, small scale, private cloud, infrastructure, open source, edge solution" />
   <meta name="author" content="Canonical" />
@@ -41,6 +41,8 @@
       <ul class="p-navigation__items">
         <li class="p-navigation__item {% if path.startswith('/resources') %}is-selected{% endif %}"><a
                 class="p-navigation__link" href="/resources/">Resources</a></li>
+        <li class="p-navigation__item {% if path.startswith('/roadshow') %}is-selected{% endif %}"><a
+                class="p-navigation__link" href="/roadshow/">Roadshow</a></li>
         <li class="p-navigation__item"><a
                 class="p-navigation__link" href="https://canonical-microcloud.readthedocs-hosted.com/en/latest/"
                 target="_blank" rel="noopener noreferrer">Docs</a></li>
