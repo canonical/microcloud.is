@@ -15,6 +15,7 @@ $color-suru-end: darken(#333, 10%);
 // import additional styles
 @import "row-cli";
 @import "intl-tel-input";
+@import "pattern_lists";
 
 .p-navigation {
   .p-navigation__row {
