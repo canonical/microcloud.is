@@ -19,7 +19,7 @@
     "watch-cli": "0.2.3"
   },
   "dependencies": {
-    "@canonical/global-nav": "3.6.0",
+    "@canonical/global-nav": "3.6.1",
     "@canonical/cookie-policy": "3.5.0",
     "autoprefixer": "10.4.13",
     "esbuild": "0.14.10",
