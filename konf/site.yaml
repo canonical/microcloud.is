@@ -11,14 +11,17 @@ production:
     if ($host = 'www.microcloud.is' ) {
       rewrite ^ https://canonical.com/microcloud$request_uri? permanent;
     }
+    if ($host = 'microcloud.is' ) {
+      rewrite ^ https://canonical.com/microcloud$request_uri? permanent;
+    }
     more_set_headers "Link: <https://assets.ubuntu.com>; rel=preconnect; crossorigin, <https://assets.ubuntu.com>; rel=preconnect";
 
 # Overrides for staging
 staging:
   replicas: 3
   nginxConfigurationSnippet: |
-    if ($host = 'www.microcloud.is' ) {
-      rewrite ^ https://canonical.com/microcloud$request_uri? permanent;
+    if ($host = 'staging.microcloud.is' ) {
+      rewrite ^ https://staging.canonical.com/microcloud$request_uri? permanent;
     }
     more_set_headers "X-Robots-Tag: noindex";
     more_set_headers "Link: <https://assets.ubuntu.com>; rel=preconnect; crossorigin, <https://assets.ubuntu.com>; rel=preconnect";
