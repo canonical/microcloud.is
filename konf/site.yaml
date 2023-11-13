@@ -9,7 +9,7 @@ production:
   replicas: 5
   nginxConfigurationSnippet: |
     if ($host = 'www.microcloud.is' ) {
-      rewrite ^ https://microcloud.is$request_uri? permanent;
+      rewrite ^ https://canonical.com/microcloud$request_uri? permanent;
     }
     more_set_headers "Link: <https://assets.ubuntu.com>; rel=preconnect; crossorigin, <https://assets.ubuntu.com>; rel=preconnect";
 
@@ -17,5 +17,8 @@ production:
 staging:
   replicas: 3
   nginxConfigurationSnippet: |
+    if ($host = 'www.microcloud.is' ) {
+      rewrite ^ https://canonical.com/microcloud$request_uri? permanent;
+    }
     more_set_headers "X-Robots-Tag: noindex";
     more_set_headers "Link: <https://assets.ubuntu.com>; rel=preconnect; crossorigin, <https://assets.ubuntu.com>; rel=preconnect";
